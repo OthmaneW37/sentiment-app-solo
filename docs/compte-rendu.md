@@ -1,7 +1,7 @@
 # Compte rendu global des TP1 à TP3
 
-**Binôme :** Othmane Moussawi (@OthmaneW37) et Ahmed Rayane Ramzi (@RayaneRZ24)
-**Dépôt :** https://github.com/OthmaneW37/OthmaneMoussawi-A---AhmedRayaneRamzi-B
+**Auteur :** Othmane Moussawi (@OthmaneW37), travail en solo
+**Dépôt :** https://github.com/OthmaneW37/sentiment-app-solo
 **Date :** 14/10/2026
 
 ## 1. Le besoin et son cadrage
@@ -123,7 +123,6 @@ Nous entraînerions le modèle sur des **avis e-commerce réels**, étiquetés p
 | Membre | Ce qu'il a pris en charge |
 | --- | --- |
 | Othmane Moussawi | Création du dépôt et de l'environnement, fiches de cadrage, installation et exécution des kits TP2 et TP3, analyse des erreurs et du seuil, rédaction du compte rendu |
-| Ahmed Rayane Ramzi | [À compléter par Ahmed Rayane Ramzi : ce qu'il a réellement fait] |
 
 ## Outils d'aide à la rédaction
 

@@ -1060,16 +1060,16 @@ Analysez « Livraison rapide, produit conforme, très satisfait », puis « Prod
 **Obtenu** :
 
 ```
-Mesuré avec ui/client.py (le code que la page appelle), pas dans l'interface :
-« Livraison rapide, produit conforme, très satisfait » -> POSITIVE 0.777 (78 %)
-« Produit cassé et service injoignable, à fuir »       -> NEGATIVE 0.7465 (75 %)
+Saisie dans la page http://localhost:8501 (onglet « Un avis »), puis « Analyser » :
+« Livraison rapide, produit conforme, très satisfait » -> « Avis positif », 78 %
+« Produit cassé et service injoignable, à fuir »       -> « Avis négatif », 75 %
 ```
 
-- [ ] Conforme
+- [x] Conforme
 
 **Commentaire** (d'où viennent ces pourcentages ?) :
 
-> Les scores correspondent à l'attendu (78 % puis 75 %), mais je les ai mesurés en appelant le client HTTP de la page, sans saisir les avis dans le navigateur. La case reste à cocher une fois la capture faite dans l'interface.
+> Les deux verdicts et les confiances (78 % puis 75 %) correspondent à l'attendu. Mesuré dans le navigateur, avec l'API démarrée en parallèle. Les scores sont ceux de T16 et T17 : la page ne fait qu'appeler l'API.
 
 ![T30 : avis positif](captures/tp5-t30-positif.png)
 
@@ -1084,15 +1084,15 @@ Analysez « xqzvb wlkptr grombu ».
 **Obtenu** :
 
 ```
-Mesuré avec ui/client.py :
-« Zorblax quimpel dratu vonka » -> INDETERMINE 0.5162 (52 %)
+« Zorblax quimpel dratu vonka » -> « Je ne sais pas : à faire vérifier par un humain », 52 %
+Message affiché : « La confiance est sous le seuil d'abstention : un humain doit trancher. »
 ```
 
-- [ ] Conforme
+- [x] Conforme
 
 **Commentaire** (pourquoi cet affichage vaut-il mieux qu'un verdict forcé ?) :
 
-> Le score de 52 % correspond à l'attendu. Le message affiché par la page (« Je ne sais pas : à faire vérifier par un humain ») n'a pas été vérifié visuellement ; la case reste à cocher après la capture.
+> Sous le seuil de 0,60, la page n'affiche aucun verdict tranché mais demande une vérification humaine, avec la confiance de 52 %. C'est l'abstention décrite au TP4, rendue visible dans l'interface.
 
 ![T31 : je ne sais pas](captures/tp5-t31-abstention.png)
 
@@ -1105,15 +1105,15 @@ Analysez trois espaces. Arrêtez ensuite l'API (`Ctrl+C` dans son terminal), rec
 **Obtenu** :
 
 ```
-Texte vide : message « Texte refusé : vide, fait d'espaces, ou de plus de 2000 caractères. »
-API arrêtée : message « API injoignable : lancez d'abord uvicorn api.main:app »
+Champ vide, puis « Analyser » : « Texte refusé : vide, fait d'espaces, ou de plus de 2000 caractères. »
+API arrêtée, puis « Analyser » : « API injoignable : lancez d'abord uvicorn api.main:app »
 ```
 
-- [ ] Conforme
+- [x] Conforme
 
 **Commentaire** (quelle réponse de l'API se cache derrière chaque message ?) :
 
-> Les deux messages d'erreur sont ceux de l'attendu, mesurés avec le client HTTP de la page. Ils n'ont pas été vérifiés visuellement dans l'interface ; la case reste à cocher après la capture.
+> Les deux erreurs sont affichées sous forme de messages lisibles, sans trace d'exception : un texte refusé par l'API (422) et une API arrêtée. Mesuré dans le navigateur ; l'API a été arrêtée avant la seconde saisie.
 
 ![T32 : texte refusé](captures/tp5-t32-refus.png)
 

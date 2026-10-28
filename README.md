@@ -77,11 +77,10 @@ python src/bilan_jeu_or.py
 
 La CI entraîne le modèle de démonstration avant les tests, puis exécute ruff, mypy et pytest avec au moins 95 % de couverture de l'API. Les erreurs connues du jeu d'or restent documentées et sont attendues avec `xfail(strict=True)`.
 
-## Membres du binôme
+## Auteur
 
 | Rôle | Nom | GitHub |
 | --- | --- | --- |
-| Membre A | Othmane Moussawi | @OthmaneW37 |
-| Membre B | Ahmed Rayane Ramzi | @RayaneRZ24 |
+| Auteur | Othmane Moussawi | @OthmaneW37 |
 
-Chaque membre doit refaire les essais sur son poste et commiter sous son identité.
+Projet réalisé en solo : les essais sont refaits sur mon poste.

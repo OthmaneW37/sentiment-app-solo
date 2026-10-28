@@ -30,6 +30,8 @@ Après chaque contrôle, remplissez les quatre rubriques de son bloc :
 
 **Ne capturez jamais** un jeton d'accès, un mot de passe ou le contenu d'un fichier `.env`.
 
+**Nature des images de ce journal.** Les captures de l'API et de l'interface (T15, T29 à T32) sont de vraies captures d'écran du navigateur. Les autres images (terminal, GitHub Actions) sont des **rendus en image de la sortie réelle** des commandes, relancées le 28/10/2026 dans une copie propre du dépôt : chacune porte la mention « Sortie réelle de la commande, rendue en image ». Ce ne sont pas des captures d'écran de la fenêtre du terminal. Les contrôles sans objet (travail en solo) ou non réalisés (TP6) n'ont pas d'image.
+
 À la fin de chaque TP, commitez le journal et les captures :
 
 ```powershell
@@ -104,7 +106,7 @@ Sans objet : travail réalisé en solo, il n'y a pas de membre B.
 
 > Sans objet : travail réalisé en solo, il n'y a pas de membre B.
 
-![Poste du membre B](captures/tp0-poste-membre-b.png)
+*Pas de capture : contrôle sans objet ou non rejoué (voir le commentaire).*
 
 ---
 
@@ -255,7 +257,7 @@ Sans objet : travail réalisé en solo, il n'y a pas de membre B.
 
 > Sans objet : travail réalisé en solo, il n'y a pas de membre B.
 
-![T4 : diagnostic du membre B](captures/tp1-t4-check-setup-b.png)
+*Pas de capture : contrôle sans objet ou non rejoué (voir le commentaire).*
 
 ### T5 · Un commit par membre (membres B puis A)
 
@@ -382,7 +384,7 @@ Kit TP2 non rejoué dans ce dépôt solo.
 
 > Les fichiers du TP2 (src/make_demo.py, train.py, evaluate.py, predict.py, tests/test_model.py) viennent du dépôt de travail précédent, où ils avaient été installés par appliquer_tp2.py. L'état « 2 failed, 38 passed, 2 skipped » n'a pas été recréé. Au commit du TP2, la CI donne 45 passed.
 
-![C1 : point de départ du TP2](captures/tp2-c1-pytest.png)
+*Pas de capture : contrôle sans objet ou non rejoué (voir le commentaire).*
 
 ### C2 · Le jeu de démonstration
 
@@ -524,7 +526,7 @@ Sans objet : travail réalisé en solo, il n'y a pas de membre B.
 
 - [ ] Conforme
 
-![TP2 : poste du membre B](captures/tp2-membre-b.png)
+*Pas de capture : contrôle sans objet ou non rejoué (voir le commentaire).*
 
 > Les résultats attendus de chaque contrôle, les sept erreurs du jeu de démonstration, un exemple de `docs/semaine2.md` et la fin du TP2 (push, CI, part du membre B) sont détaillés dans l'**annexe B**, à la fin de ce journal. Le script d'entraînement, `src/train.py`, est expliqué pas à pas dans l'**annexe C**.
 
@@ -736,7 +738,7 @@ Sans objet : travail réalisé en solo, il n'y a pas de membre B.
 
 - [ ] Conforme
 
-![TP3 : poste du membre B](captures/tp3-membre-b.png)
+*Pas de capture : contrôle sans objet ou non rejoué (voir le commentaire).*
 
 > Les contrôles T15 à T20 sont expliqués en détail dans l'**annexe D**, à la fin de ce journal : ce qui se passe dans l'API à chaque essai, les réponses exactes attendues, et pourquoi. La structure de la page `/docs` et une liste de vingt essais à y faire sont dans l'**annexe E**.
 
@@ -955,7 +957,7 @@ CI du commit TP4 (après correctif) : succès  https://github.com/OthmaneW37/sen
 
 > ruff et mypy ne signalent plus rien sur l'état final. Au premier push du TP4, la CI a échoué sur ruff (I001, ordre des imports de ui/app.py) ; un commit de correction a rétabli le vert. Les étapes intermédiaires de mypy (avertissement sur .upper()) et le crochet pre-commit n'ont pas été rejoués.
 
-![T27 : commit refusé par pre-commit](captures/tp4-t27-pre-commit.png)
+*Pas de capture : contrôle sans objet ou non rejoué (voir le commentaire).*
 
 ![T27 : la CI du TP4](captures/tp4-t27-actions.png)
 
@@ -981,7 +983,7 @@ Sans objet : travail réalisé en solo, il n'y a pas de membre B.
 
 - [ ] Conforme
 
-![TP4 : poste du membre B](captures/tp4-membre-b.png)
+*Pas de capture : contrôle sans objet ou non rejoué (voir le commentaire).*
 
 > Ce que sont `ruff` et `mypy`, ce que chacun vérifie et pourquoi ils figurent dans la CI sont expliqués dans l'**annexe F**, à la fin de ce journal.
 
@@ -1014,7 +1016,7 @@ Kit TP5 non rejoué dans ce dépôt solo.
 
 > Les fichiers du TP5 (ui/, tests/test_client.py, tests/test_interface.py, data/avis_exemple.csv, docs/semaine5.md) viennent du dépôt de travail. Au commit du TP5, la CI donne 102 passed et 4 xfailed.
 
-![T28 : tests du TP5](captures/tp5-t28-pytest.png)
+*Pas de capture : contrôle sans objet ou non rejoué (voir le commentaire).*
 
 ### T29 · La page ouverte, l'API prête
 
@@ -1138,7 +1140,7 @@ Résumé : {'INDETERMINE': 1, 'NEGATIVE': 2, 'POSITIVE': 3}
 
 > Le résumé correspond exactement à l'attendu. Le téléversement du fichier dans l'onglet et le téléchargement de resultats.csv n'ont pas été faits dans le navigateur ; la case reste à cocher après la capture.
 
-![T33 : le lot d'avis](captures/tp5-t33-lot.png)
+*Pas de capture : le téléversement du CSV dans l'interface reste à faire (l'image présente dans le dépôt vient d'un essai précédent).*
 
 ### T34 · Compte rendu, push, CI
 
@@ -1189,7 +1191,7 @@ Sans objet : travail réalisé en solo, il n'y a pas de membre B.
 
 - [ ] Conforme
 
-![TP5 : poste du membre B](captures/tp5-membre-b.png)
+*Pas de capture : contrôle sans objet ou non rejoué (voir le commentaire).*
 
 ---
 
@@ -1219,7 +1221,7 @@ Non réalisé : le TP6 (packaging) n'a pas été fait.
 
 > Le kit tp6-packaging-kit.zip est disponible dans les ressources mais n'a pas été appliqué. Ce contrôle n'a donc pas été rejoué.
 
-![T35](captures/tp6-t35-pytest.png)
+*Pas de capture : contrôle sans objet ou non rejoué (voir le commentaire).*
 
 ### T36 · predict.py dans le paquet
 
@@ -1246,7 +1248,7 @@ Non réalisé : le TP6 (packaging) n'a pas été fait.
 
 > Le kit tp6-packaging-kit.zip est disponible dans les ressources mais n'a pas été appliqué. Ce contrôle n'a donc pas été rejoué.
 
-![T36](captures/tp6-t36-deplacement.png)
+*Pas de capture : contrôle sans objet ou non rejoué (voir le commentaire).*
 
 ### T37 · L'API branchée sur le paquet
 
@@ -1273,7 +1275,7 @@ Non réalisé : le TP6 (packaging) n'a pas été fait.
 
 > Le kit tp6-packaging-kit.zip est disponible dans les ressources mais n'a pas été appliqué. Ce contrôle n'a donc pas été rejoué.
 
-![T37](captures/tp6-t37-api.png)
+*Pas de capture : contrôle sans objet ou non rejoué (voir le commentaire).*
 
 ### T38 · La commande sentiment
 
@@ -1301,7 +1303,7 @@ Non réalisé : le TP6 (packaging) n'a pas été fait.
 
 > Le kit tp6-packaging-kit.zip est disponible dans les ressources mais n'a pas été appliqué. Ce contrôle n'a donc pas été rejoué.
 
-![T38](captures/tp6-t38-commande.png)
+*Pas de capture : contrôle sans objet ou non rejoué (voir le commentaire).*
 
 ### T39 · La roue
 
@@ -1326,7 +1328,7 @@ Non réalisé : le TP6 (packaging) n'a pas été fait.
 
 > Le kit tp6-packaging-kit.zip est disponible dans les ressources mais n'a pas été appliqué. Ce contrôle n'a donc pas été rejoué.
 
-![T39](captures/tp6-t39-roue.png)
+*Pas de capture : contrôle sans objet ou non rejoué (voir le commentaire).*
 
 ### T40 · La roue hors du dépôt
 
@@ -1355,7 +1357,7 @@ Non réalisé : le TP6 (packaging) n'a pas été fait.
 
 > Le kit tp6-packaging-kit.zip est disponible dans les ressources mais n'a pas été appliqué. Ce contrôle n'a donc pas été rejoué.
 
-![T40](captures/tp6-t40-ailleurs.png)
+*Pas de capture : contrôle sans objet ou non rejoué (voir le commentaire).*
 
 ### T41 · Version, étiquette, push
 
@@ -1383,7 +1385,7 @@ Non réalisé : le TP6 (packaging) n'a pas été fait.
 
 > Le kit tp6-packaging-kit.zip est disponible dans les ressources mais n'a pas été appliqué. Ce contrôle n'a donc pas été rejoué.
 
-![T41](captures/tp6-t41-actions.png)
+*Pas de capture : contrôle sans objet ou non rejoué (voir le commentaire).*
 
 ### Membre B, après le TP6
 
@@ -1406,7 +1408,7 @@ Sans objet : travail réalisé en solo, il n'y a pas de membre B.
 
 - [ ] Conforme
 
-![TP6 : poste du membre B](captures/tp6-membre-b.png)
+*Pas de capture : contrôle sans objet ou non rejoué (voir le commentaire).*
 
 > Les commandes de ce TP, leurs notions préalables et les points d'attention (ordre de T36, paquet `build`) sont expliqués dans l'**annexe H**, à la fin de ce journal.
 

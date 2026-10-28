@@ -45,4 +45,4 @@ pre-commit run --all-files
 
 Activer `.venv` avant de commiter : les hooks locaux utilisent `ruff` et `mypy` de cet environnement. La CI réentraîne le modèle, lance les deux outils puis impose 95 % de couverture de `api/`.
 
-Les sorties et les limites des contrôles effectués sont consignées dans [le journal](docs/journal-tp1-tp5.md) et [les mesures TP4](docs/semaine4.md). Les anciens états attendus du TP1 seul sont conservés dans [l'ancien document](docs/archives/ancien-TESTS.md).
+Les sorties et les limites des contrôles effectués sont consignées dans [le journal](docs/journal-tp1-tp6.md) et [les mesures TP4](docs/semaine4.md). Les anciens états attendus du TP1 seul sont conservés dans [l'ancien document](docs/archives/ancien-TESTS.md).

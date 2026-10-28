@@ -10,7 +10,7 @@ Application du module *Développement et déploiement d'applications intelligent
 | TP4 | Contrat, abstention, jeu d'or, intégration et qualité | [Semaine 4](docs/semaine4.md) |
 | TP5 | Interface Streamlit cliente de l'API, avis seul et CSV | [Semaine 5](docs/semaine5.md) |
 
-Le [journal de rattrapage](docs/journal-tp1-tp5.md) distingue les contrôles rejoués des vérifications à faire par chaque membre sur son poste. Les documents de l'ancienne version où le TP3 était une interface directe restent dans [les archives](docs/archives/) et [les anciens comptes rendus](docs/comptes-rendus/).
+Le [journal TP1 à TP6](docs/journal-tp1-tp6.md) consigne, contrôle par contrôle, ce qui a été mesuré, ce qui ne l’a pas été et les écarts assumés. Les documents de l'ancienne version où le TP3 était une interface directe restent dans [les archives](docs/archives/) et [les anciens comptes rendus](docs/comptes-rendus/).
 
 ## Installation sous PowerShell
 
